@@ -38,7 +38,6 @@ const settingsData = [{
       name: 'Anna',
       settings: {
         [savedSettings[1]._id]: 'female',
-        [savedSettings[2]._id]: 25,
         [savedSettings[3]._id]: true
       }
     }, {
