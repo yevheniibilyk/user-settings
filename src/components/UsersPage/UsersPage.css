@@ -1,0 +1,10 @@
+.users-page {
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.users-page-list {
+    width: 30%;
+    min-width: 200px;
+}
