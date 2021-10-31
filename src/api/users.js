@@ -6,8 +6,14 @@ export async function getUsers() {
   return data;
 }
 
+export async function getUser(userId) {
+  const { data } = await axios.get(`/users/${userId}`);
+
+  return data;
+}
+
 export async function updateUser(userData) {
-  const { data } = await axios.put(userData._id, userData);
+  const { data } = await axios.put(`/users/${userData._id}`, userData);
 
   return data;
 }
