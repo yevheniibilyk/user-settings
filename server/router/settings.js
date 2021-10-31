@@ -20,7 +20,7 @@ router.post('/', async (req, res) => {
 // Update setting
 router.put('/:id', async (req, res) => {
   const updatedSetting = await Setting.findByIdAndUpdate(req.params['id'], req.body.setting, {
-    returnDocument: 'after'
+    new: true
   });
 
   res.send(updatedSetting);
