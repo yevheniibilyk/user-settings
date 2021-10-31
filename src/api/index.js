@@ -1,2 +1,2 @@
-export { getUsers, updateUser } from './users';
+export { getUsers, updateUser, getUser } from './users';
 export { getSettings } from './settings';

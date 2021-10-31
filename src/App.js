@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import UsersPage from './components/UsersPage';
+import UserSettings from './components/UserSettings/UserSettings';
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
           <Route exact path="/">
             <UsersPage />
           </Route>
-          {/*<Route path="/user/:id">*/}
-          {/*  <About />*/}
-          {/*</Route>*/}
+          <Route path="/user/:id">
+            <UserSettings />
+          </Route>
         </Switch>
       </div>
     </Router>

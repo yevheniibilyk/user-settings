@@ -1,0 +1,21 @@
+.setting {
+    display: flex;
+    min-height: 40px;
+    align-items: center;
+}
+
+.setting__name {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 639px) {
+    .setting {
+        display: block;
+    }
+    .setting__name {
+        margin-bottom: 10px;
+    }
+}
